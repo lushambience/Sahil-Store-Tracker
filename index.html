@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evening Report of the Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Evening Report of the Day</h1>
+        <p>Please complete this report at the end of each day. This form captures key details about your interactions and activities.</p>
+        
+        <form id="eveningReportForm">
+            <h2>Step 1: Sales Executive Information</h2>
+            <label for="salesExecName">Sales Executive Name:</label>
+            <input type="text" id="salesExecName" name="salesExecName" required>
+
+            <label for="retailerName">Retailer Name:</label>
+            <input type="text" id="retailerName" name="retailerName" required>
+
+            <label for="retailerLocation">Retailer Location:</label>
+            <input type="text" id="retailerLocation" name="retailerLocation" required>
+
+            <label for="inTime">In Time:</label>
+            <input type="time" id="inTime" name="inTime" required>
+
+            <label for="outTime">Out Time:</label>
+            <input type="time" id="outTime" name="outTime" required>
+
+            <h2>Step 2: Select Products</h2>
+            <div id="productNames" class="product-grid">
+                <label><input type="checkbox" name="productNames" value="RANGOLI 4X6 F"> RANGOLI 4X6 F</label>
+                <label><input type="checkbox" name="productNames" value="ROYAL 4X6 F"> ROYAL 4X6 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 1.5X1.5"> SAHIL 1.5X1.5</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 1.5X12"> SAHIL 1.5X12</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 1.5X6"> SAHIL 1.5X6</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 2.4X4 N"> SAHIL 2.4X4 N</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 2.5X4"> SAHIL 2.5X4</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 2.5X6 F"> SAHIL 2.5X6 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 2X4 F"> SAHIL 2X4 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 2X4 N"> SAHIL 2X4 N</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 3X6 F"> SAHIL 3X6 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 3X6 L"> SAHIL 3X6 L</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 4X6 F"> SAHIL 4X6 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 4X6 L"> SAHIL 4X6 L</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 5X7 F"> SAHIL 5X7 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 6X6 F"> SAHIL 6X6 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 6X9 F"> SAHIL 6X9 F</label>
+                <label><input type="checkbox" name="productNames" value="SAHIL 9X12 F"> SAHIL 9X12 F</label>
+                <label><input type="checkbox" name="productNames" value="HANDY 4X6"> HANDY 4X6</label>
+                <label><input type="checkbox" name="productNames" value="None"> None</label>
+            </div>
+
+            <h2>Step 3: Additional Information</h2>
+            <label for="reason">Reason:</label>
+            <select id="reason" name="reason" required>
+                <option value="Payment">Payment</option>
+                <option value="Order">Order</option>
+                <option value="Stock">Stock</option>
+            </select>
+
+            <label for="paymentStatus">Payment Status:</label>
+            <select id="paymentStatus" name="paymentStatus" required>
+                <option value="Clear">Clear</option>
+                <option value="Part Payment">Part Payment</option>
+                <option value="Not">Not</option>
+            </select>
+
+            <label for="orderStatus">Order Status:</label>
+            <select id="orderStatus" name="orderStatus" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="stockAvailable">Stock Available Quantity:</label>
+            <input type="number" id="stockAvailable" name="stockAvailable" required>
+
+            <label for="numCallsMade">Number of Calls Made:</label>
+            <input type="number" id="numCallsMade" name="numCallsMade" required>
+
+            <label for="numProductiveCalls">Number of Productive Calls:</label>
+            <input type="number" id="numProductiveCalls" name="numProductiveCalls" required>
+
+            <label for="totalValue">Total Value Amount (INR):</label>
+            <input type="number" id="totalValue" name="totalValue" required>
+
+            <label for="additionalComments">Additional Comments or Remarks:</label>
+            <textarea id="additionalComments" name="additionalComments" rows="4" placeholder="If you have any additional notes, comments, or feedback regarding today's activities, please enter them here..."></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
